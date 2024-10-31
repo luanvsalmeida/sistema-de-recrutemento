@@ -41,22 +41,26 @@ O backend em Django fornece endpoints para operações CRUD, enquanto o frontend
    ```bash
    python -m venv env
    ```
-3. Acesse a pasta /sistema
+3. Ative o ambiente
+   ```bash
+   env/Scripts/activate
+   ```
+4. Acesse a pasta /sistema
 
-4. Instale as dependências
+5. Instale as dependências 
 ```bash
-   pip install -r requirements.txt
+   pip install Django djangorestframework rest_framework_simplejwt django-cors-headers
    ```
 
-5. Execute as migrações:
+6. Execute as migrações:
    ```bash
    python manage.py migrate
    ```
-3. Inicie o servidor Django:
+7. Inicie o servidor Django:
    ```bash
    python manage.py runserver
    ```
-
+* use o comando python ou py
 ### Frontend
 1. Navegue até a pasta do frontend (/app) e instale as dependências:
    ```bash
