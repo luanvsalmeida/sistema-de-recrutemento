@@ -63,7 +63,12 @@ O backend em Django fornece endpoints para operações CRUD, enquanto o frontend
 ## Uso
 ### Login e Autenticação
 1. Acesse a página de login. Após a autenticação, o sistema armazena `accessToken`, `refreshToken`, `isRecrutador`, e `userId` no local storage para controlar as permissões.
-2. O frontend envia o token de autenticação via headers em cada requisição para acessar os dados protegidos.
+2. Caso não deseje criar um novo usuário clique em cadastrar abaixo do botão de login, digite o usuário, senha e escolha a opção se é um recrutador ou não
+3. O frontend envia o token de autenticação via headers em cada requisição para acessar os dados protegidos.
+
+### Página inicial
+1. A página inicial exibirá o currículo do usuário logado, caso não tenha, será exibido um link para cria-lo.
+2. Se o usuário logado for um recrutador, todos os currículos criados serão exibidos.
 
 ## Estrutura do Projeto
 - `backend/`: Código fonte do servidor Django, com modelos para `DadosUsuario`, `DadosPessoais`, `Contato`, `ExperienciaProfissional` e `FormacaoAcademica`.
