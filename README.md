@@ -35,23 +35,22 @@ O backend em Django fornece endpoints para operações CRUD, enquanto o frontend
 
 ## Configuração
 ### Backend
-1. Clone o repositório e navegue até a pasta do backend.
+1. Clone o repositório e navegue até a pasta do backend (/sistema).
 2. Instale as dependências:
    ```bash
    pip install -r requirements.txt
    ```
-3. Configure o banco de dados no arquivo `settings.py` (substitua pelo banco de sua escolha).
-4. Execute as migrações:
+2. Execute as migrações:
    ```bash
    python manage.py migrate
    ```
-5. Inicie o servidor Django:
+3. Inicie o servidor Django:
    ```bash
    python manage.py runserver
    ```
 
 ### Frontend
-1. Navegue até a pasta do frontend e instale as dependências:
+1. Navegue até a pasta do frontend (/app) e instale as dependências:
    ```bash
    npm install
    ```
