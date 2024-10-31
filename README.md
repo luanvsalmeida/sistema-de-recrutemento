@@ -35,12 +35,20 @@ O backend em Django fornece endpoints para operações CRUD, enquanto o frontend
 
 ## Configuração
 ### Backend
-1. Clone o repositório e navegue até a pasta do backend (/sistema).
-2. Instale as dependências:
+1. Clone o repositório.
+
+2. Crie um ambiente virtual:
    ```bash
+   python -m venv env
+   ```
+3. Acesse a pasta /sistema
+
+4. Instale as dependências
+```bash
    pip install -r requirements.txt
    ```
-2. Execute as migrações:
+
+5. Execute as migrações:
    ```bash
    python manage.py migrate
    ```
